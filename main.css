@@ -1,0 +1,380 @@
+body {
+  background-color: white;
+}
+
+body.index {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  color: #000000;
+}
+
+h2, h3, h4, h5, h6 {
+  color: #000000;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a {
+  color: #000000;
+  transition: all .2s ease-out;
+}
+
+html, body {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+
+h2 {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+h3 {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 15.4px;
+}
+
+p {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+ul {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+nav {
+  width: 100%;
+  height: 40px;
+  background-color: #CE1141;
+  padding-right: 10px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+nav a {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  text-decoration: none;
+  position: relative;
+  line-height: 40px;
+}
+
+nav a:hover {
+  background-color: #BA0C2F;
+}
+
+img.logo {
+  vertical-align: top;
+  height: 40px;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table, th, td {
+  font-family: arial, sans-serif;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+tr a:link {
+  color: #111111;
+}
+
+tr a:visited {
+  color: #753BBD;
+}
+
+tr a:hover {
+  color: #BA0C2F
+}
+
+figure {
+  width: 50%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+figure.figureleft {
+  float: left;
+  width: 30%;
+}
+
+figure.figureright {
+  float: right;
+  width: 30%;
+}
+
+figure.figurecenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.fade:hover {
+  opacity: 1;
+}
+
+.fadetext {
+  opacity: 0.1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.fadetext:hover {
+  opacity: 1;
+}
+
+.faderaj {
+  opacity: 0.5;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.faderaj:hover {
+  opacity: 1;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  width: 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+}
+
+#popup {
+  color: #000;
+  background-color: #fff;
+}
+
+#popup a span {
+  display: none;
+}
+
+#popup a:hover span {
+  display: block;
+  position: absolute;
+  z-index: auto;
+  left: 270px;
+  width: 320px;
+  margin: 0px;
+  padding: 10px;
+  color: #335500;
+  font-weight: normal;
+  background: #e5e5e5;
+  text-align: left;
+  border: 1px solid #666;
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 1px) and (max-device-width: 1024px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    border: 1px solid #000000;
+  }
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  #popup a:hover span {
+    display: none;
+  }
+  .fade {
+    opacity: 1;
+  }
+  .fadetext {
+    opacity: 1;
+  }
+  td:nth-of-type(1):before {
+    content: "No.";
+  }
+  td:nth-of-type(2):before {
+    content: "Name";
+  }
+  td:nth-of-type(3):before {
+    content: "Position";
+  }
+  td:nth-of-type(4):before {
+    content: "Age";
+  }
+  td:nth-of-type(5):before {
+    content: "Height";
+  }
+  td:nth-of-type(6):before {
+    content: "Weight";
+  }
+}
+
+.gallery {
+  background: #eee;
+  width: 500px;
+  margin: 1em auto;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery .hero {
+  padding: 1em;
+}
+
+.gallery .thumbs {
+  background: #ddd;
+  padding: 1em;
+  text-align: center;
+}
+
+.gallery .thumbs img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.gallery .active {
+  opacity: 0.5;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+#input {
+  display: flex;
+}
+
+#text {
+  resize: none;
+  padding: 10px;
+  font-size: 12pt;
+}
+
+#submit {
+  font-size: 12pt;
+  padding: 20px;
+  background: #CE1141;
+  color: white;
+  font-family: sans-serif;
+}
+
+label {
+  font-size: .8rem;
+  display: block;
+  margin: 1rem 0 .2rem 0;
+}
+
+input:invalid:not(:focus) {
+  outline: 1px solid #f00;
+}
+
+legend {
+  background-color: #000;
+  color: #fff;
+  padding: 3px 6px;
+}
+#content {
+  display: flex;
+  justify-content: flex-end;
+}
+.comment{
+    display: flex;
+    justify-content: flex-end;
+}
