@@ -13,7 +13,7 @@ async function getComments() {
 
   comments.forEach(function(comment) {
     html = html + `<br><div><span>${comment.message}</span><br>
-      <br><span><b>Posted By:</b> <a href>${comment.email}</a></span><br>
+      <br><span><b>Posted By:</b> <a href="mailto:${comment.email}">${comment.email}</a></span><br>
       <br><span><b>Created at:</b> ${comment.created_at}</span><br>
     </div>`;
   });
@@ -37,6 +37,15 @@ async function postComments(comment) {
   });
   getComments();
 };
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
 // content.addEventListener('click', function(){
 //   if (event.target.className === "completeTask"){
