@@ -101,7 +101,7 @@ ul {
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
-  color: #f2f2f2;
+  color: #black;
   text-align: center;
   padding-top: 5px;
   padding-right: 10px;
@@ -114,14 +114,14 @@ ul {
 
 .topnav a:hover {
   background-color: #BA0C2F;
-  color: black;
+  color: white;
 }
 
 /* Add an active class to highlight the current page */
 
 .active {
   background-color: #4CAF50;
-  color: white;
+  color: black;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
